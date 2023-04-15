@@ -18,6 +18,7 @@ local PROCS = {
 	[50363] = {spellIds={"71484","71485","71486","71487","71491","71492"},types={"SPELL_AURA_APPLIED","SPELL_AURA_REFRESH"},onSelfOnly=0}, -- Proc #9: Heroic Deathbringers Will
 	[50342] = {spellIds={"71401"},types={"SPELL_AURA_APPLIED","SPELL_AURA_REFRESH"},onSelfOnly=0}, -- Proc #12: Whispering Fanged Skull
 	[50343] = {spellIds={"71541"},types={"SPELL_AURA_APPLIED","SPELL_AURA_REFRESH"},onSelfOnly=0}, -- Proc #13: Heroic Whispering Fanged Skull
+	[28034] = {spellIds={"33649"},types={"SPELL_AURA_APPLIED","SPELL_AURA_REFRESH"},onSelfOnly=0}, -- Hourglass of the unraveller
 }
 
 function TrinketProcs:OnInitialize()
