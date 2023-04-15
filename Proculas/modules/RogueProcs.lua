@@ -15,6 +15,12 @@ if not Proculas.enabled then
 end
 
 local PROCS = {
+	[66923] = {types={"SPELL_EXTRA_ATTACKS"},onSelfOnly=0}, -- Hack and Slash
+	[35542] = {types={"SPELL_ENERGIZE"},onSelfOnly=0}, -- Combat Potency I
+	[35545] = {types={"SPELL_ENERGIZE"},onSelfOnly=0}, -- Combat Potency II
+	[35546] = {types={"SPELL_ENERGIZE"},onSelfOnly=0}, -- Combat Potency III
+	[35547] = {types={"SPELL_ENERGIZE"},onSelfOnly=0}, -- Combat Potency IV
+	[35548] = {types={"SPELL_ENERGIZE"},onSelfOnly=0}, -- Combat Potency V
 }
 
 function RogueProcs:OnInitialize()
