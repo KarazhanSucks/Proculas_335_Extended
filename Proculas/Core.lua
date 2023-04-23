@@ -470,21 +470,21 @@ function Proculas:processProc(spellID,isAura)
 	self:postProc(spellID)
 	
 	-- Check Cooldown
-	if procData.updateCD and procData.lastProc > 0 and ((procData.cooldown == 0) or (time() - procData.lastProc < procData.cooldown)) then
-		local proccd = time() - procData.lastProc
+	if procData.updateCD and procData.lastProc > 0 and ((procData.cooldown == 0) or (GetTime() - procData.lastProc < procData.cooldown)) then
+		local proccd = GetTime() - procData.lastProc
 		if(proccd == 0) then
 			procData.zeroCD = true
 		end
 		if(procData.zeroCD) then
 			procData.cooldown = 0
 		else
-			procData.cooldown = time() - procData.lastProc
+			procData.cooldown = GetTime() - procData.lastProc
 		end
 	end
 
 	-- Uptime Calculation
 	if isAura and procData.started == 0 then
-			procData.started = time()
+			procData.started = GetTime()
 			self.active[spellID] = spellID
 		
 	end
@@ -517,7 +517,7 @@ function Proculas:processProc(spellID,isAura)
 	
 	-- Count
 	procData.count = procData.count+1
-	procData.lastProc = time()
+	procData.lastProc = GetTime()
 end
 
 -------------------------------------------------------
