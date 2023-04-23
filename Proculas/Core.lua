@@ -346,6 +346,7 @@ function Proculas:resetProcStats()
 		proc.lastProc = 0
 		proc.uptime = 0
 		proc.count = 0
+		proc.cooldown = 0
 	end
 end
 
