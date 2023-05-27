@@ -20,6 +20,7 @@ local PROCS = {
 	[50343] = {spellIds={"71541"},types={"SPELL_AURA_APPLIED","SPELL_AURA_REFRESH"},onSelfOnly=0}, -- Proc #13: Heroic Whispering Fanged Skull
 	[28034] = {spellIds={"33649"},types={"SPELL_AURA_APPLIED","SPELL_AURA_REFRESH"},onSelfOnly=0}, -- Hourglass of the unraveller
 	[31332] = {spellIds={"38308"},types={"SPELL_EXTRA_ATTACKS"},onSelfOnly=0}, -- Blinkstrike
+	[29348] = {spellIds={"35131"},types={"SPELL_AURA_APPLIED","SPELL_AURA_REFRESH"},onSelfOnly=0}, -- The Bladefist
 }
 
 function TrinketProcs:OnInitialize()
